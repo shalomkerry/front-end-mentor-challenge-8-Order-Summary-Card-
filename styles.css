@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+body{
+
+  background-image: url('pattern-background-desktop.svg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-color:#e0e8ff;
+  font-family:'Red Hat Display';
+  min-height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width:380px;
+  height: 575px;
+  background-color:#fff;
+  position:absolute;
+  border-radius:10px;
+}
+.image__hero{
+  border-radius: 10px 10px 0 0;
+  width:380px;
+}
+.content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:25px;
+}
+.content__title{
+  padding-top: 10px;
+  font-size: 25px;
+  margin-bottom:10px;
+  color:#1f2f56;
+  font-weight:900;
+  
+}
+.content__brief{
+  text-align:center;
+  opacity:0.6;
+  font-weight:400;
+  font-size:15px;
+  margin-bottom:10px;
+  line-height:1.4rem; 
+}
+.interact{
+  display:block;
+  margin-top:5px;
+ }
+.interact__item{
+  border:none;
+  height:80px;
+  width:310px;
+  background:#F8F9FE;
+  display:flex;
+  align-items:center;
+  padding-left:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+.interact__image{
+  height:40px;
+  margin-right:10px;
+}
+.interact__time{
+  font-weight:900;
+  font-size:14px;
+}
+.interact__price{
+  opacity:0.6;
+  font-weight:400;
+  font-size:13px;
+}
+.interact__change{
+  position:relative;
+  left:5rem;
+  border:none;
+  background:none;
+  text-decoration: underline;
+  color:#3829e0;
+  font-weight: 900;
+  
+}
+.interact__pay{
+  margin:10px 0 10px;
+  background:#3829e0;
+  color:white;
+  width:310px;
+  height:45px;
+  border:none;
+  border-radius:10px;
+  font-weight: 700;
+  font-size:12px;
+  box-shadow:0px 11px 9px 0px rgba(56,41,224,0.52);
+  margin-bottom:25px;
+
+}
+.interact__cancel{
+  background:transparent;
+  border:none;
+  position:relative;
+  left:35%;
+  font-size:12px;
+  font-weight:900;
+  opacity:0.5;
+}
+button:hover{
+  cursor:pointer;
+}
+.interact__opacity:hover{
+  opacity:0.8;
+}
+.interact__cancel:hover{
+  opacity:1;
+}
+@media (max-width:575px){
+  body{
+    background-image:url('pattern-background-mobile.svg');
+  }
+  .interact__pay{
+    height:55px;
+    font-size:15px;
+  }
+  .interact__cancel{
+    font-size:15px;
+  }
+}
